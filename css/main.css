@@ -418,17 +418,6 @@ img {
   position: relative;
 }
 
-.header-link.current::after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: currentColor;
-}
-
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -475,6 +464,16 @@ img {
 }
 .header-link:hover, .header-link :focus {
   color: var(--third-title-color);
+}
+.header-link.current::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: currentColor;
 }
 
 .header-link-contact {
@@ -526,7 +525,7 @@ img {
   background-position: center;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -539,7 +538,7 @@ img {
   margin-right: auto;
 }
 
-.header-btn {
+.hero__btn {
   color: var(--main-title-color);
   background-color: var(--third-title-color);
   margin: 0 auto;
@@ -622,15 +621,7 @@ img {
   padding-top: 0px;
 }
 
-.devices-title {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--second-title-color);
-}
-
-.devices-list {
+.devices__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -639,11 +630,11 @@ img {
           justify-content: space-between;
 }
 
-.devices-top-wrap {
+.devices__top-wrap {
   position: relative;
 }
 
-.devices-top-text {
+.devices__top-text {
   position: absolute;
   bottom: 0;
   padding-top: 27px;
@@ -761,19 +752,19 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list {
+.clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
 
-.clients-item {
+.clients__item {
   width: calc((100% - 150px) / 6);
   height: 90px;
 }
 
-.clients-link {
+.clients__link {
   width: 100%;
   height: 100%;
   border: 1px solid var(--main-icon-color);
@@ -794,20 +785,20 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:hover {
+.clients__link:hover {
   border-color: var(--third-title-color);
 }
-.clients-link:hover .clients-icon {
+.clients__link:hover .clients__icon {
   fill: var(--third-title-color);
 }
-.clients-link:focus {
+.clients__link:focus {
   border-color: var(--third-title-color);
 }
-.clients-link:focus .clients-icon {
+.clients__link:focus .clients__icon {
   fill: var(--third-title-color);
 }
 
-.clients-icon {
+.clients__icon {
   fill: var(--main-icon-color);
   -webkit-transition-property: fill;
   transition-property: fill;
